@@ -1,4 +1,5 @@
-<?php declare(strict_types = 1); 
+<?php declare(strict_types = 1);
+      use Yatl\Bootstrap; 
 
 // if (! defined('PHPNEXUS_VERSION')) {
 //     require_once dirname(__DIR__) . '/autoload.php';
@@ -8,4 +9,7 @@ if(!defined('YATL_VERSION')){
     require_once dirname(__DIR__) . '/autoload.php';
 }
 
-require __DIR__ . '/../src/Bootstrap.php';
+
+$bs = new Bootstrap();
+
+$bs->init();
